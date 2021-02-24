@@ -1,0 +1,7 @@
+210224 Vanilla JS - 크롬 앱 만들기 start
+
+# JavaScript : 웹에 쓰이는 하나뿐인 언어
+# Vanilla JS : 아무것도(library, framework) 없는 js, 브라우저를 통해 제공 
+
+
+
