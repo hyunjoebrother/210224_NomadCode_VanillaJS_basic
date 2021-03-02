@@ -4,4 +4,10 @@
 # Vanilla JS : 아무것도(library, framework) 없는 js, 브라우저를 통해 제공 
 
 
+210302 Ch1-6 : Variable 변수
+
+$console.log() : 실행
+*변수를 생성해보자
+Create -> Initialize -> Use
+let a = 17; -> let b = a - 5; -> console.log(b);
 
