@@ -11,3 +11,50 @@ $console.log() : 실행
 Create -> Initialize -> Use
 let a = 17; -> let b = a - 5; -> console.log(b);
 
+210304 Ch1-7 : let, const, var
+
+const : 상수, stable, 변하지 않음, 재선언 금지, 재할당 금지
+let : 값 변경 허용, 재선언 금지, 재할당 가능
+var : variable 값 변경 허용, 재선언 가능, 재할당 가능
+
+* 변수 첫 사용은 const로 하자
+* "..." 는 text 취급, string
+* bool -> true/false : text 아님
+* float : 소숫점
+
+## Organizing Data by Array & Object
+
+# Array : 여러 데이터를 하나로 묶어서 저장 list 
+
+* 이름 지정할 때 소문자대문자 섞어 씀 'camel case'
+ex) const daysOfWeek = ["Mon", "Wed"];
+-> console.log(daysOfWeek[1]);
+
+
+# Object : 각 value에 이름 지정 가능
+: 실제 객체를 만들어서 label을 저장하고 싶은 data에 줄 수 있다
+const meiInfo = {
+	name : "Mei",
+	age : 24,
+	gender : "Female",
+	isHandsome : true
+}
+-> console.log(meiInfo.gender); 
+
+* Object를 Array 안에 넣기 가능!
+favAnimals : ["Cat", "Puppy"]
+
+* Object 의 Array 생성 가능!
+favFood : [{name : "Bob", fatty : false }]
+
+** log는 object이자 function
+
+* 인자 (Argument)/파라미터
+: 함수는 인자를 받음. 유사 변수
+-> 인자를 받도록 함수를 준비하자
+-> function sayHello(potato) { 
+	console.log('Hello', potato);
+}
+
+
+
