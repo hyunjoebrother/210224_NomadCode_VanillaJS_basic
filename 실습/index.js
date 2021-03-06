@@ -19,6 +19,7 @@ function sayHello() {
 }
 */
 
+
 // Argument 사용
 function sayHello() {
     console.log('Hello!', potato);
@@ -27,3 +28,4 @@ function sayHello() {
 //sayHello();
 sayHello("Mei");
 console.log("Hi")
+
