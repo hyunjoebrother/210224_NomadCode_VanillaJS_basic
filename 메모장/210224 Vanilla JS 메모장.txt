@@ -55,6 +55,41 @@ favFood : [{name : "Bob", fatty : false }]
 -> function sayHello(potato) { 
 	console.log('Hello', potato);
 }
+-> 인자를 무한히 받을 수 있다
+
+
+210307 Ch2-1 : More Function Fun
+
+더 멋지게 사용해보자
+`` : 백틱
+console.log(`Hello ${name} you are ${age} years old`);
+-> 변수를 ${ }로 설정
+
+console.log 대신에 return 으로 반환가능
+
+
+JS를 HTML과 같이 써보자
+
+JS에서 id 선택하기 -> document
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
