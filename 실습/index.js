@@ -51,5 +51,8 @@ function sayHello() {
 // console.log(plus)
 
 
-//// JS에서 id 선택하기
+//// JS에서 id (title) 선택하기
+const title = document.getElementById
+("title");
 
+console.log(title)

@@ -68,11 +68,13 @@ console.log(`Hello ${name} you are ${age} years old`);
 console.log 대신에 return 으로 반환가능
 
 
+
+210308 Ch2-2 : JS DOM Functions
+
+
 JS를 HTML과 같이 써보자
 
 JS에서 id 선택하기 -> document
-
-
 
 
 
