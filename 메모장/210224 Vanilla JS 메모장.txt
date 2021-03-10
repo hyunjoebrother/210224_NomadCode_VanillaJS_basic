@@ -73,9 +73,11 @@ console.log 대신에 return 으로 반환가능
 
 
 JS를 HTML과 같이 써보자
+*JS에서 id 선택하기 -> document.
 
-JS에서 id 선택하기 -> document
-
+*DOM : Document Object Module
+: JS는 HTML에 있는 모든 요소들을 가져오고 object로 바꿔줌
+** innerHTML
 
 
 

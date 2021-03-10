@@ -52,7 +52,11 @@ function sayHello() {
 
 
 //// JS에서 id (title) 선택하기
-const title = document.getElementById
-("title");
+const title = document.getElementById("title");
 
-console.log(title)
+console.log(title);
+
+console.erroe("fuck");
+
+title.innerHTML = "Hi From JS";
+
