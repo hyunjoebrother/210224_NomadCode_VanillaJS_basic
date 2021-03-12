@@ -54,11 +54,17 @@ function sayHello() {
 
 
 //// JS에서 id (title) 선택하기
-const title = document.getElementById("title");
+//const title = document.getElementById("title");
+
+const title = document.querySelector("#title");
+// querySelector : 노드의 첫번째 자식을 반환return (#는 id, .는 class)
 
 console.log(title);
 
-console.erroe("fuck");
+//console.error("fuck");
 
 title.innerHTML = "Hi From JS";
+title.style.color = 'red';
+
+document.title = 'I own you';
 

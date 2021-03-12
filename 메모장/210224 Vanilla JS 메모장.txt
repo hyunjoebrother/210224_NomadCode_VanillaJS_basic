@@ -80,14 +80,20 @@ JS를 HTML과 같이 써보자
 ** innerHTML
 
 
+210312 Ch2-3 : Modifying the DOM with JS
 
+console.log 대신에 다른 걸 써보자
+console.dir -> js 객체 표기법이 나옴
 
+수정해보자
+title.style.color = 'red'; -> html 을 js로 조작 가능
 
+document.title = "I own you"; -> 문서 이름 수정 가능
 
-
-
-
-
+const title = document.querySelector("title");
+# querySelector : 노드의 첫번째 자식을 반환return
+-> #title : id를 선택하겠다
+-> /title : class를 선택하겠다
 
 
 
