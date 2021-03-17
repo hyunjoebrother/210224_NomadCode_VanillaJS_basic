@@ -61,8 +61,18 @@ console.log(title);
 
 //console.error("fuck");
 
-title.innerHTML = "Hi From JS";
-title.style.color = 'red';
+//title.innerHTML = "Hi From JS";
+//title.style.color = 'red';
 
-document.title = 'I own you';
+//document.title = 'I own you';
 
+function handleResize() {
+    console.log("I have been resized")
+}
+
+function handleClick() {
+    title.style.color = "red";
+}
+
+//window.addEventListener("resize", handleResize); // 함수 호출
+title.addEventListener("click", handleClick);

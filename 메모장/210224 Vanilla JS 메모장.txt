@@ -91,9 +91,37 @@ title.style.color = 'red'; -> html 을 js로 조작 가능
 document.title = "I own you"; -> 문서 이름 수정 가능
 
 const title = document.querySelector("title");
-# querySelector : 노드의 첫번째 자식을 반환return
+# querySelector : 노드의 첫번째 자식을  	반환return
 -> #title : id를 선택하겠다
 -> /title : class를 선택하겠다
+
+
+210317 Ch2-4 : Events and event handlers
+
+JS : Event에 반응하기 위한 것 (단순 html, css 변형용이 아님)
+Event : 웹사이트에서 발생하는 것들 click, resize, submit...
+-> "Listen to Event" : JS가 event 받기를 기다리는 것
+
+window에 event Listener을 추가하기 위해 이벤트에서 다를 함수를 작성하자
+
+* 함수 vs 함수()
+() 없으면 원하는 시간에 호출, -> resize할 때 호출 62420 // 65930 //// 63634
+() 있으면 지금 바로 호출 -> resize 안해도 자동 호출
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
