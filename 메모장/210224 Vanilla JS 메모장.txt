@@ -109,6 +109,30 @@ window에 event Listener을 추가하기 위해 이벤트에서 다를 함수를
 () 있으면 지금 바로 호출 -> resize 안해도 자동 호출
 
 
+210318 Ch2-5 : If, else, and, or
+
+if - else if - else문
+* === : 값을 할당하지 않는다. just 비교
+
+and / or 문
+
+*prompt : 유저에게 무언가를 물어봄
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
