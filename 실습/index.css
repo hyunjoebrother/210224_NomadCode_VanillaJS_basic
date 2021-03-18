@@ -4,8 +4,18 @@ body {
 
 h1 {
     color : #34495e;
+    transition: color 0.5s ease-in-out;
 }
 
 /* #title {
 
 } */
+
+/* 클래스 */
+.clicked {
+    color : #7f8c8d;
+}
+
+.btn {
+    cursor: pointer;
+}

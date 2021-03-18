@@ -121,8 +121,12 @@ and / or 문
 
 **const를 써보자
 
+** 솔직히 JS에서는 logic만 처리하는게 깔끔 
 
 
+>>>> 드디어 실전!!!!! <<<<
+
+Ch3-0 : Making a JS Clock part.1
 
 
 

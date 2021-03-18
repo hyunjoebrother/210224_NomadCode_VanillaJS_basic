@@ -96,42 +96,63 @@ function sayHello() {
 // }
 
 
-const title = document.querySelector("#title");
-// // querySelector : 노드의 첫번째 자식을 반환return (#는 id, .는 class)
+// const title = document.querySelector("#title");
+// // // querySelector : 노드의 첫번째 자식을 반환return (#는 id, .는 class)
 
-const BASE_COLOR = "#34495e";
-const OTHER_COLOR = "#7f8c8d";
+// const BASE_COLOR = "#34495e";
+// const OTHER_COLOR = "#7f8c8d";
+
+// function handleClick() {
+//     //console.log(title.style.color); // title을 click할 때 색을 알 수 있음
+//     //title.style.color = "red";
+
+//     const currentColor = title.style.color;
+
+//     if(currentColor === BASE_COLOR) {
+//         title.style.color = OTHER_COLOR;
+//     } else {
+//         title.style.color = BASE_COLOR;
+//     }
+// }
+
+// // if-else 이런거 귀찮으니까 초기화 함수를 만들자
+// function init() {
+//     title.style.color = BASE_COLOR;
+//     //title.addEventListener("click", handleClick);
+//     title.addEventListener("mouseenter", handleClick);
+//     //// click, mouseenter... 이런 event : MDN에서 검색하기
+// }
+// init();
+
+// // MDN에서 아무거나 검색해봄 - 오프라인일 때도 가능
+// function handleOffline() {
+//     console.log("OFFLINE");
+// }
+
+// function handleOnline() {
+//     console.log("ONLINE");
+// }
+
+// window.addEventListener("offline", handleOffline)
+// window.addEventListener("online", handleOnline)
+
+
+const title = document.querySelector("#title");
+// querySelector : 노드의 첫번째 자식을 반환return (#는 id, .는 class)
+
+const CLICKED_CLASS = "clicked";
 
 function handleClick() {
-    //console.log(title.style.color); // title을 click할 때 색을 알 수 있음
-    //title.style.color = "red";
+    const currentClass = title.className;
 
-    const currentColor = title.style.color;
-
-    if(currentColor === BASE_COLOR) {
-        title.style.color = OTHER_COLOR;
+    if(currentClass !== CLICKED_CLASS) {
+        title.className = CLICKED_CLASS;
     } else {
-        title.style.color = BASE_COLOR;
+        title.className = "";
     }
 }
 
-// if-else 이런거 귀찮으니까 초기화 함수를 만들자
 function init() {
-    title.style.color = BASE_COLOR;
-    //title.addEventListener("click", handleClick);
-    title.addEventListener("mouseenter", handleClick);
-    //// click, mouseenter... 이런 event : MDN에서 검색하기
+    title.addEventListener("click", handleClick);
 }
 init();
-
-// MDN에서 아무거나 검색해봄 - 오프라인일 때도 가능
-function handleOffline() {
-    console.log("OFFLINE");
-}
-
-function handleOnline() {
-    console.log("ONLINE");
-}
-
-window.addEventListener("offline", handleOffline)
-window.addEventListener("online", handleOnline)
