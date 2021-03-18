@@ -77,21 +77,61 @@ function sayHello() {
 // //window.addEventListener("resize", handleResize); // 함수 호출
 // title.addEventListener("click", handleClick);
 
-if(10 === 5) {
-    console.log('hi');
-} else if ("10" === "10") {
-    console.log('lol');
-} else {
-    console.log("ho");
+// if(10 === 5) {
+//     console.log('hi');
+// } else if ("10" === "10") {
+//     console.log('lol');
+// } else {
+//     console.log("ho");
+// }
+
+
+// const age = prompt("How old r u?");
+// //console.log(age);
+
+// if (age > 20 && age < 24) {
+//     console.log("u can drink");
+// } else {
+//     console.log("Nope");
+// }
+
+
+const title = document.querySelector("#title");
+// // querySelector : 노드의 첫번째 자식을 반환return (#는 id, .는 class)
+
+const BASE_COLOR = "#34495e";
+const OTHER_COLOR = "#7f8c8d";
+
+function handleClick() {
+    //console.log(title.style.color); // title을 click할 때 색을 알 수 있음
+    //title.style.color = "red";
+
+    const currentColor = title.style.color;
+
+    if(currentColor === BASE_COLOR) {
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
 }
 
+// if-else 이런거 귀찮으니까 초기화 함수를 만들자
+function init() {
+    title.style.color = BASE_COLOR;
+    //title.addEventListener("click", handleClick);
+    title.addEventListener("mouseenter", handleClick);
+    //// click, mouseenter... 이런 event : MDN에서 검색하기
+}
+init();
 
-const age = prompt("How old r u?");
-//console.log(age);
-
-if (age > 20 && age < 24) {
-    console.log("u can drink");
-} else {
-    console.log("Nope");
+// MDN에서 아무거나 검색해봄 - 오프라인일 때도 가능
+function handleOffline() {
+    console.log("OFFLINE");
 }
 
+function handleOnline() {
+    console.log("ONLINE");
+}
+
+window.addEventListener("offline", handleOffline)
+window.addEventListener("online", handleOnline)
