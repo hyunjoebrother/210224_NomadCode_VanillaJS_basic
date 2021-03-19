@@ -126,10 +126,13 @@ and / or 문
 
 >>>> 드디어 실전!!!!! <<<<
 
+모멘텀 Momentum 
+
 Ch3-0 : Making a JS Clock part.1
 
+clock.js 파일 따로 만들어서 작업
 
-
+먼저 init 함수 생성
 
 
 
