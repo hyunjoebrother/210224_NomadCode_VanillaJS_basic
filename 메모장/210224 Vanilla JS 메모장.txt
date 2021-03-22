@@ -126,6 +126,9 @@ and / or 문
 
 >>>> 드디어 실전!!!!! <<<<
 
+210322 Ch3-1 : Making a JS Clock part 1
+
+
 모멘텀 Momentum 
 
 Ch3-0 : Making a JS Clock part.1
@@ -133,9 +136,15 @@ Ch3-0 : Making a JS Clock part.1
 clock.js 파일 따로 만들어서 작업
 
 먼저 init 함수 생성
+다음에 body 태그 내에 div 태그로 class 작성
 
+const로 설정
 
+다음에 현재 시각을 가져오는 함수 생성
 
+객체 안에 text 넣으면 시간 나타남
+clockTitle.innerText = `${hours}:${minutes}:${seconds}`;
+하지만 아직 새로고침을 해야함 ㅇㅇ 실시간 반영이 아니다 ㅠㅠ
 
 
 
