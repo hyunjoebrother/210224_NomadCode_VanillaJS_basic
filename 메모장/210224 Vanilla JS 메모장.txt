@@ -131,8 +131,6 @@ and / or 문
 
 모멘텀 Momentum 
 
-Ch3-0 : Making a JS Clock part.1
-
 clock.js 파일 따로 만들어서 작업
 
 먼저 init 함수 생성
@@ -147,6 +145,15 @@ clockTitle.innerText = `${hours}:${minutes}:${seconds}`;
 하지만 아직 새로고침을 해야함 ㅇㅇ 실시간 반영이 아니다 ㅠㅠ
 
 
+210323 Ch3-2 : Making a JS Clock part 2
+
+시간 실시간 반영 함수를 알아보자
+setInterval : 두 인자 (Argument) 값을 받음 
+-> 첫번째 인자 - 실행할 함수를 받음 -> 그리고 그 함수를 실행하고 싶은 시간 체크
+-> 두번째 인자 - 실행할 시간 간격
+
+[예시]
+setInterval(sayHi, 
 
 
 
