@@ -170,11 +170,12 @@ ${seconds < 10 ? `0${seconds}` : seconds}
 사람의 정보를 컴퓨터에 저장해보자
 gretting.js 생성
 
+Local Storage
+: 작은 정보(12시간법,  참거짓 등)를 user 컴퓨터에 저장
 
-
-
-
-
+local storage에서 user 유무에 따라 case 나눠보자
+-> 현재 user가 null 아닐 때 색깔을 표시하는 함수를 추가로 만들자
+-> 색칠할 때 form을 숨기자 -> remove 추가
 
 
 

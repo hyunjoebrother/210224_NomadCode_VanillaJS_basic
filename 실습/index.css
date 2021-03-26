@@ -16,6 +16,14 @@ h1 {
     color : #7f8c8d;
 }
 
-.btn {
+/* .btn {
     cursor: pointer;
+} */
+
+.form, .greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
 }
