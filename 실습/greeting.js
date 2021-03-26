@@ -15,13 +15,28 @@ function paintGreeting(text) {
     greeting.innerText = `Hello ${text}`;
 }
 
+// submit을 handle할 함수를 만들자
+function handleSubmit(event) {
+    
+}
+
+
+// 현재 user가 null일 때 user의 이름을 요청하는 함수를 만들자
+function askForName() {
+    form.classList.add(SHOWING_CN);
+    form.addEventListener("submit", handleSubmit)
+}
+
+
+
+
 // local storage에서 정보를 가져옴
 function loadName() {
     const currentUser = localStorage.getItem(USER_LS);
 
     // local storage에 user 유무에 따라 case 나눠보자
     if(currentUser === null) {
-
+        askForName();
     } else {
         paintGreeting(currentUser);
     }
