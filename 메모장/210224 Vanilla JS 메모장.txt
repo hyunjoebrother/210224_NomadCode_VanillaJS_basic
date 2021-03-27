@@ -183,4 +183,21 @@ case 2) 현재 user가 null일 때 user의 이름을 요청하는 함수를 만�
 -> submit을 handle할 함수를 만들자
 
 * event의 preventDefault
+: event는 거품처럼 하나가 실행되면 다른 모든 것들이 event에 반응함
+-> 이 기본 동작 default를 막고 싶다
+-> 막으면 입력칸 enter쳐도 안 날라감
+
+
+parameter의 현재 value가 필요 -> check
+
+이제 새로고침해도 내 이름 기억하도록 하자
+이름을 저장하는 함수를 만들자
+
+
+
+
+
+
+
+
 

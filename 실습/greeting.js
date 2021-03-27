@@ -17,11 +17,22 @@ function paintGreeting(text) {
 
 // submit을 handle할 함수를 만들자
 function handleSubmit(event) {
-    
+    event.preventDefault();
+
+    const currentValue = input.value;
+    // console.log(currentValue); // 확인용
+
+    paintGreeting(currentValue);
+
+    saveName(currentValue);
 }
 
+// 마지막으로 새로고침해도 이름을 저장하는 함수를 만들자
+function saveName(text) {
+    localStorage.setItem(USER_LS, text);
+}
 
-// 현재 user가 null일 때 user의 이름을 요청하는 함수를 만들자
+// 현재 user가 nwull일 때 user의 이름을 요청하는 함수를 만들자
 function askForName() {
     form.classList.add(SHOWING_CN);
     form.addEventListener("submit", handleSubmit)
