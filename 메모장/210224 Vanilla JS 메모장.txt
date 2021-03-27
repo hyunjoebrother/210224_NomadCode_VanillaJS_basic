@@ -194,6 +194,22 @@ parameter의 현재 value가 필요 -> check
 이름을 저장하는 함수를 만들자
 
 
+210327 Ch3-4 : Making a To Do List part 1
+
+greeting.js랑 비슷. hiding & showing 기능만 없을뿐
+
+그리고 form과 class 작성
+
+
+
+
+
+
+
+
+
+
+
 
 
 
