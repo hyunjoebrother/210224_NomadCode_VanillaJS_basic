@@ -198,7 +198,13 @@ parameter의 현재 value가 필요 -> check
 
 greeting.js랑 비슷. hiding & showing 기능만 없을뿐
 
-그리고 form과 class 작성
+그리고 form과 class 작성 + list 까지
+
+다음으로 js 파일에서 const(상수)를 선언할 때 다른 파일과 이름이 겹침
+-> js 모듈들을 분리시키도록 이름을 바꿔주자
+
+다음에는 local storage에서 정보를 가져옴
+
 
 
 
