@@ -4,7 +4,7 @@ const form = document.querySelector(".js-form"),
     greeting = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser",
-    // Class Name
+    // CN : Class Name
     SHOWING_CN = "showing";
 
 

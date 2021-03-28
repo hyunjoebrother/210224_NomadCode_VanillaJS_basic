@@ -3,11 +3,13 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     toDoInput = form.querySelector("input"),
     toDoList = document.querySelector(".js-toDoList");
 
+const USER_LS = "currentUser";
+
 
 
 // local storage에서 정보를 가져옴
 function loadToDos() {
-    const current
+    const currentUser = localStorage.getItem(USER_LS);
 
 }
 
@@ -17,3 +19,4 @@ function loadToDos() {
         loadToDos();
 }
 init();
+
