@@ -1,6 +1,6 @@
 // const(상수) 선언할 때 다른 파일이랑 이름 겹쳐서 바꾸자 (js모듈들을 분리시키도록)
 const toDoForm = document.querySelector(".js-toDoForm"),
-    toDoInput = form.querySelector("input"),
+    toDoInput = toDoForm.querySelector("input"),
     toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
@@ -17,8 +17,14 @@ function loadToDos() {
 
 }
 
+// ToDo 생성 -> HTML에서 li로 틀을 만들어주자
 function paintToDo(text) {
-    
+    // 확인용 console.log(text);
+    const li = document.createElement("li");
+    const delBtn = document.createElement("button");
+    delBtn.value = "";
+    const span = document.createElement("span");
+    span.innerText = text;
 }
 
 
@@ -29,6 +35,11 @@ function handleSubmit(event) {
 
     const currentValue = toDoInput.value;
     // 그리고 paintToDo 함수를 만들자
+    paintToDo(currentValue);
+
+    // enter누르면 입력창에 내가 쓴 내용 사라지도록 하자
+    toDoInput.value = "";
+
 
 }
 

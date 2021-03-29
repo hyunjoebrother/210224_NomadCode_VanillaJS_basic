@@ -216,9 +216,10 @@ submit이라는 event를 handle 하기 위해서
 handleSubmit이라는 함수를 만들자
 
 그리고 paintToDo 함수를 만들자
+enter누르면 입력창에 내가 쓴 내용 사라지도록 하자
 
-
-
+ToDo 생성 -> HTML에서 li로 틀을 만들어주자
+숫자 타입 id를 주자
 
 
 
