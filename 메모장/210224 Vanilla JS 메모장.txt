@@ -203,9 +203,11 @@ greeting.js랑 비슷. hiding & showing 기능만 없을뿐
 다음으로 js 파일에서 const(상수)를 선언할 때 다른 파일과 이름이 겹침
 -> js 모듈들을 분리시키도록 이름을 바꿔주자
 
-다음에는 local storage에서 정보를 가져옴
+다음에는 local storage에서 정보를 가져옴 - loadToDos()
 
+const로 상수 만들기 - TODOS_LS
 
+toDos가 null일 때 toDoForm을 가져오자
 
 
 
