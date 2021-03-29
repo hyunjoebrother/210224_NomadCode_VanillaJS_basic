@@ -207,12 +207,15 @@ greeting.js랑 비슷. hiding & showing 기능만 없을뿐
 
 const로 상수 만들기 - TODOS_LS
 
-toDos가 null일 때 toDoForm을 가져오자
+toDos가 null 일 때 할 일이 없음
+-> 아닐 때를 생각해보자
 
+toDo를 생성하는 함수 toDoForm에서
+addEventListener로 event를 추가하고,
+submit이라는 event를 handle 하기 위해서
+handleSubmit이라는 함수를 만들자
 
-
-
-
+그리고 paintToDo 함수를 만들자
 
 
 

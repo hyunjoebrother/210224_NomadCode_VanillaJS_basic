@@ -11,18 +11,34 @@ const TODOS_LS = "toDos";
 function loadToDos() {
     const toDos = localStorage.getItem(TODOS_LS);
 
-    if(toDos === null) {
+    if(toDos !== null) {
 
-    } else {
-        
     }
 
 }
 
+function paintToDo(text) {
+    
+}
+
+
+
+// submit을 handle할 함수를 만들자
+function handleSubmit(event) {
+    event.preventDefault();
+
+    const currentValue = toDoInput.value;
+    // 그리고 paintToDo 함수를 만들자
+
+}
 
 // 먼저 init 함수 세팅
     function init() {
+
         loadToDos();
+        // toDo를 생성하자
+        toDoForm.addEventListener("submit", handleSubmit);
+        // submit를 handle할 함수를 만들자
 }
 init();
 
