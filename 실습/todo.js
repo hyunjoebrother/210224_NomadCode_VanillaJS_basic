@@ -22,7 +22,7 @@ function paintToDo(text) {
     // 확인용 console.log(text);
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    delBtn.value = "";
+    delBtn.value = "❌"; // Emoji : windows + ;
     const span = document.createElement("span");
     span.innerText = text;
 }
@@ -39,8 +39,6 @@ function handleSubmit(event) {
 
     // enter누르면 입력창에 내가 쓴 내용 사라지도록 하자
     toDoInput.value = "";
-
-
 }
 
 // 먼저 init 함수 세팅
