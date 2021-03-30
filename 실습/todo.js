@@ -27,8 +27,6 @@ function paintToDo(text) {
     span.innerText = text;
 }
 
-
-
 // submit을 handle할 함수를 만들자
 function handleSubmit(event) {
     event.preventDefault();
