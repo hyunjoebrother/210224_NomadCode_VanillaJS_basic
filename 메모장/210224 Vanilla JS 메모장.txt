@@ -221,7 +221,12 @@ enter누르면 입력창에 내가 쓴 내용 사라지도록 하자
 ToDo 생성 -> HTML에서 li로 틀을 만들어주자
 숫자 타입 id를 주자
 
+지금까지 한 것은 querySelector로
+HTML에서 필요한 것들을 얻음
 
+이제 span과 delBtn을 li 안에 넣자(append)
+toDoList.appendChild(li);
+마지막으로 li를 ul에 넣자(append)
 
 
 

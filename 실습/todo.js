@@ -18,13 +18,24 @@ function loadToDos() {
 }
 
 // ToDo 생성 -> HTML에서 li로 틀을 만들어주자
-function paintToDo(text) {
+function paintToDo(text) { // submit함수에서 온 text 값
     // 확인용 console.log(text);
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    delBtn.value = "❌"; // Emoji : windows + ;
+    delBtn.innerHTML = "❌"; // Emoji : windows + ;
+
     const span = document.createElement("span");
     span.innerText = text;
+
+    li.appendChild(span);
+    li.appendChild(delBtn);
+
+    // 이제 span과 delBtn을 li 안에 넣자(append)
+    toDoList.appendChild(li);
+
+    // 마지막으로 li를 ul에 넣자(append)
+    
+
 }
 
 // submit을 handle할 함수를 만들자
