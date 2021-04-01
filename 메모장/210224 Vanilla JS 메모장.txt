@@ -228,9 +228,39 @@ HTML에서 필요한 것들을 얻음
 toDoList.appendChild(li);
 마지막으로 li를 ul에 넣자(append)
 
+결론적으로 element를 생성하고 ul안에 넣고 싶은 곳에 넣음
 
 
+이제 본격적으로 화면 위에 띄워보자
 
+먼저 ToDo 저장하자 - Array 형식으로 (시작은 empty)
+이를 채우기 위해 toDoObj를 만들자
+그 후 push로 element 넣어준다
+결론은 'toDos' Array 안에 toDoObj를 넣는다
+
+newId로 깔끔하게 id 부여해주고
+li에도 newId에 이어서 id 할당해줌
+
+다음에는 Local Storage에도 ToDo를 저장해주자
+toDos를 가져와서 local에 저장하는 함수를 만들자 - saveToDos
+그리고 paintToDo에서 push다음에 함수 호출하자
+
+F12 - Application - Local Storage 확인하면 'Object'이라고 써있음
+: Local Storage에서는 JS의 data를 저장할 수 없기 때문 string만 가능
+-> JS는 Local Storage에 있는 모든 데이터를 string으로 저장하려고 한다
+
+-> 우리는 object가 string이 되도록 만들자 by JSON.stringify
+(JSON : JS Object Notation, data 전달할 때 JS가 다루도록 object로 바꿔주는 기능)
+저장 완료!
+
+이제는 toDos를 불러오자
+console.log(loadedToDos) -> string임
+-> JSON으로 변환 const parsedToDos = JSON.parse(loadedToDos);
+
+이제 Local Storage에서 불러온 parsedToDos를 화면에 paint(보여주기) - 우리 목표
+지금은 ToDos가 empty -> 모든 ToDo 항목에 paintToDo하자
+
+*forEach : Array에 담겨있는 것들 각각에 한번씩 함수를 실행시켜줌
 
 
 
