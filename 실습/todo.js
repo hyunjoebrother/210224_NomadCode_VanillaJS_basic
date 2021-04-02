@@ -6,6 +6,18 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 const TODOS_LS = "toDos";
 
 
+// HTML에서 ToDo를 지우기 위해 li 태그를 지우는 함수를 만들자
+function deleteToDo(event) {
+    //console.log(event.target.parentNode); // "Click"할 때 확인용
+    const btn = event.target;
+    const li = btn.parenNode; // 지워야 하는 li
+    toDoList.removeChild(li);
+
+
+}
+
+
+
 // 이제 본격적으로 화면 위에 띄워보자
 // 먼저 ToDo 저장하자 - Array 형식으로 (시작은 empty)
 const toDos = [];
@@ -15,9 +27,16 @@ function saveToDos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
     // 그리고 paintToDo에서 push다음에 함수 호출하자
     // object가 string이 되도록 만들자 by JSON.stringify
-    // JSON
-    // : JS Object Notation, data 전달할 때 JS가 다루도록 object로 바꿔주는 기능
+    // JSON (JS Object Notation)
+    // : data 전달할 때 JS가 다루도록 object로 바꿔주는 기능
 }
+
+//parsedToDos에 있는 것들 각각에 대해 실행해줄 것이고, 그 각각을 toDos라고 정하자
+// -> something 함수을 직접 괄호 내에 넣자
+// function something(toDo) {
+//     console.log(toDo.text);
+// }
+
 
 // local storage에서 정보를 가져옴
 function loadToDos() {
@@ -32,7 +51,12 @@ function loadToDos() {
         // 지금은 ToDos가 empty -> 모든 ToDo 항목에 paintToDo하자
 
         // forEach : Array에 담겨있는 것들 각각에 한번씩 함수를 실행시켜줌
-        parsedToDos.forEach()
+        //parsedToDos.forEach(something);
+        // parsedToDos에 있는 것들 각각에 대해 실행해줄 것이고, 그 각각을 toDos라고 정하자
+        
+        parsedToDos.forEach(function (toDo) {
+            paintToDo(toDo.text);
+        });
     }
 
 }
@@ -46,6 +70,8 @@ function paintToDo(text) { // submit함수에서 온 text 값
     const newId = toDos.length + 1;
 
     delBtn.innerHTML = "❌"; // Emoji : windows + ;
+    delBtn.addEventListener("click", deleteToDo);
+
     span.innerText = text;
 
     li.appendChild(delBtn);
@@ -85,12 +111,12 @@ function handleSubmit(event) {
 }
 
 // 먼저 init 함수 세팅
-    function init() {
+function init() {
 
-        loadToDos();
-        // toDo를 생성하자
-        toDoForm.addEventListener("submit", handleSubmit);
-        // submit를 handle할 함수를 만들자
+    loadToDos();
+    // toDo를 생성하자
+    toDoForm.addEventListener("submit", handleSubmit);
+    // submit를 handle할 함수를 만들자
 }
 init();
 

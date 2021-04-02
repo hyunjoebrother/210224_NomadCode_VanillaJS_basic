@@ -261,6 +261,40 @@ console.log(loadedToDos) -> string임
 지금은 ToDos가 empty -> 모든 ToDo 항목에 paintToDo하자
 
 *forEach : Array에 담겨있는 것들 각각에 한번씩 함수를 실행시켜줌
+forEach() 괄호 안에 function을 직접 만들어주거나 호출
+
+이 함수를 parsedToDos에 있는 것들 각각에 대해 실행해줄 것이고, 그 각각을 toDos라고 정하자
+-> something 함수을 직접 괄호 내에 넣자
+
+결론 : toDos를 가져온 뒤, 이 라인에서는 parse
+즉, 가져온 것을 JS object로 변환해줄 것이고
+각각에 대해서 paintToDo라는 function이 실행on
+
+
+이제 ToDo 리스트를 지워보자
+-> HTML과 Local Storage에서 지우고 저장해야함
+
+먼저 함수를 만들자
+console.log(event); // event "Click"할 때 확인용
+-> 어떤 버튼이 클릭되었는지 알아야함 -> 어떤 버튼이 지워질지 알 수 있다
+
+* .target : <button>이 계속 뜨게 함
+-> father (부모)를 모르지만 li에 id가 있음
+-> console.dir 로 직접 찾아보자 - parentNode
+=> event.target.parentNode 지정하니까 어디 클릭하는지 알 수 있음
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
