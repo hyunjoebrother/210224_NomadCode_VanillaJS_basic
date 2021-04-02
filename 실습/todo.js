@@ -6,21 +6,40 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 const TODOS_LS = "toDos";
 
 
+// filter에 쓰일 함수를 민들자 -> 괄호 안에 넣자
+function filterFn(toDo) {
+    // true만 return
+    // return toDo.id === 1 // id가 1일 때
+}
+
+
 // HTML에서 ToDo를 지우기 위해 li 태그를 지우는 함수를 만들자
 function deleteToDo(event) {
     //console.log(event.target.parentNode); // "Click"할 때 확인용
     const btn = event.target;
-    const li = btn.parenNode; // 지워야 하는 li
+    const li = btn.parentNode; // 지워야 하는 li
     toDoList.removeChild(li);
 
+    //const clearToDos = toDos.filter(filterFn);
+    const clearToDos = toDos.filter(function(toDo) {
+        return toDo.id !== parseInt(li.id); 
+        // 모든 toDos가 li의 id와 같지 않을 때 + li의 id가 string이라 변환
+    });
+    // filter : array의 모든 아이템을 통해 함수를 실행하고, 
+    // true인 아이템들만 가지고 새로운 array를 만든다
+    //console.log(clearToDos); // 확인용
 
+    // 이제 toDos를 clear하자
+    toDos = clearToDos;
+    saveToDos();
 }
 
 
 
 // 이제 본격적으로 화면 위에 띄워보자
 // 먼저 ToDo 저장하자 - Array 형식으로 (시작은 empty)
-const toDos = [];
+//const toDos = [];
+let toDos = [];
 
 // toDos를 가져와서 local에 저장하는 함수를 만들자
 function saveToDos() {

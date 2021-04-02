@@ -283,6 +283,30 @@ console.log(event); // event "Click"할 때 확인용
 -> console.dir 로 직접 찾아보자 - parentNode
 => event.target.parentNode 지정하니까 어디 클릭하는지 알 수 있음
 
+다음에 구글링으로 delete child element mdn 검색
+-> removeChild(li)로 제거 가능
+하지만 새로고침하면 삭제안됨 -> toDos.filter 함수
+-> filter가 실행시킬 함수 하나를 만들자 -> 마치 forEach 느낌
+: array의 모든 아이템을 통해 함수를 실행하고, 
+true인 아이템들만 가지고 새로운 array를 만든다
+
+-> cleanToDos와 filter은 filterFn이 체크가 된 아이템들의 array를 준다
+-> 괄호 안에 함수를 직접 작성하자
+모든 toDos가 li의 id와 같지 않을 때
+li의 id는 string이라서 변환하고 array에 넣자
+
+>>> 모든 li에 id가 존재한다!!! <<<
+
+이제 toDos를 clear하자
+toDos는 const 상수이므로 선언을 let으로 바꿔주자
+
+이제 Application에서 모두 지워진 거 확인가능!!!
+
+
+
+
+
+
 
 
 
