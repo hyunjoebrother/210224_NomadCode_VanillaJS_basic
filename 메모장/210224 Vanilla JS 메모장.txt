@@ -303,9 +303,13 @@ toDos는 const 상수이므로 선언을 let으로 바꿔주자
 이제 Application에서 모두 지워진 거 확인가능!!!
 
 
+210403 Ch3-7 : Image Background
 
+사진 5-6장 준비 - Images 폴더에 넣기
+bg,js 파일 만들고 HTML에 추가
 
-
+숫자 랜덤 생성 함수를 만들자 genRandom()
+-> JS에서 math라는 모듈이 있음
 
 
 
