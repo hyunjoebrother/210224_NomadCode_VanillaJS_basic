@@ -309,9 +309,10 @@ toDos는 const 상수이므로 선언을 let으로 바꿔주자
 bg,js 파일 만들고 HTML에 추가
 
 숫자 랜덤 생성 함수를 만들자 genRandom()
--> JS에서 math라는 모듈이 있음
-
-
+-> JS에서 Math라는 모듈이 있음
+Math.random() : 랜덤 숫자 생성 함수
+Math.random() * 5 : 1부터 5까지 랜덤 숫자 생성
+-> 뒤에 소숫점 버리기 위해 Math.floor() 함수
 
 
 
