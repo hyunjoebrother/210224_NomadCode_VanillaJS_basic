@@ -356,20 +356,51 @@ navigator.geolocation.getCurrentPosition()
 F12 - Application에서 위도와 경도 확인 가능!
 
 
+>>> Weather API <<< 를 사용해보자
+가입 (hyunjoebrother / 구글 / clara132435) 후 API key 복붙 -> js 파일 맨위에 작성
+-> const API_KEY = ""; 로 서버의 data를 가져온다
+
+* API (Application Programming Interface)
+: 다른 서버로부터 손쉽게 data를 가져올 수 있는 수단 -> data만 가져옴
+: 특정 웹사이트로부터 data를 얻거나 컴퓨터끼리 소통하기 위한 것
+
+여기 url로 request 보내면 data를 얻을 수 있음
+우리는 Geographics Coordinates 지리 좌표를 이용하는 API 주소를 따온다
+
+API call : 무엇을 호출하면 되는지 알려줌 -> 이 url을 호출하자
+{ }에 위도와 경도를 넣어준다
+-> JS를 이용해서 특정 url 호출 : 실시간으로 가능!! (새로고침 필요 x, js 장점)
+
+먼저 getWeather 함수를 만들자
+
+그리고 load에서 null이 아닐 떄 (else) 코드 작성하자
+: 만약 Local Storage에 아무것도 없으면 getWeather 함수가 실행
+
+(정리) askForCoords 함수가 실행되고,
+이 함수 안에서 정상적으로 위치 정보를 가져오면
+handleGeoSuccess가 실행되는데 여기 안에서 API가 최종적으로 호출!
+
+하지만 이미 좌표 값을 가질 때는!!! getWeather 함수를 호출하자
+그리고 F12 - Network에서 확인 - 우리가 request, response 한 내용을 보여준다
+
+이제 request URL 링크 보면 날씨 정보 확인 가능!
+
+* 온도 단위를 바꾸고 싶다
+메뉴 Other features - Unit formats
+"For temperature in Celsius use units=metric"
+-> https://api.openweathermap.org/data/2.5/weather?
+lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric 추가해준다
 
 
+다음으로 이를 이용해보자
+then : data가 완전히 들어온 다음에 함수 호출 기능
+-> 호출할 함수 : json data로 받음
+
+이제 끝!!! 디자인 ON
+<span class = "js-weather"></span>
 
 
-
-
-
-
-
-
-
-
-
-
+-> 예시 코드로 css 꾸미자
 
 
 

@@ -1,4 +1,28 @@
+// Weather API keys
+const API_KEY = "29baafed271866a19dc977306e8c98bd";
+
 const COORDS = 'coords'; // load를 위한 string 상수
+
+const weather = document.querySelector(".js-weather");
+
+
+
+function getWeather(lat, lng) {
+    // fetch를 통해 data를 얻는다 -> 링크에 lat, lng 등 추가해야함
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`)
+    .then(function(response) {
+        //console.log(response.json()); 대기중인거 확인용 - 바로 하고 싶으면 또 then 쓰기
+        return response.json();
+    })
+    .then(function(json) {
+        //console.log(json);
+        const temperature = json.main.temp;
+        const place = json.name;
+        weather.innerText = `${temperature} @ ${place}`; // 화면에 짜잔
+    });
+}
+
+
 
 // 좌표 저장 함수
 function saveCoords(coordsObj) {
@@ -22,6 +46,7 @@ function handleGeoSuccess(position) {
 
     // 저장한 죄표 함수 호출
     saveCoords(coordsObj);
+    getWeather(latitude, longitude);
 }
 
 
@@ -46,6 +71,9 @@ function loadCoords() {
         askForCoords();
     } else {
         // getWeather 함수 호출
+        const parsedCoords = JSON.parse(loadedCoords);
+        //console.log(parseCoords);
+        getWeather(parsedCoords.latitude, parsedCoords.longitude);
     }
 }
 
