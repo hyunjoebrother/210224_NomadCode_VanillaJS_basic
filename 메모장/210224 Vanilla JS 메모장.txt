@@ -321,7 +321,50 @@ cf) Math.ceil() 함수 - 올림
 새로운 class인 bgImage에 대해서 css 추가
 
 
- 
+210405 Ch3-8 : Getting the Weather part 1. Geolocation
+
+목표 : user의 location 좌표 정보 가져오고 저장
+
+weather.js 만들고 세팅하자
+
+loadCoords 함수 호출
+null이면 좌표를 요청하는 함수 호출하자
+-> 좌표 요청 함수 askForCoords()
+null 아니면 getWeather 함수 호출하자 -> 나중에 만들자 ㅇㅇ
+
+
+이제 좌표 요청 함수를 만들자
+-> navigator API를 사용한다
+navigator.geolocation.getCurrentPosition()
+-> 내용 보면 2개의 요청값이 필요함을 알 수 있음
+
+1) successCallBack 함수 - 좌표 가져오는데 성공할 때 처리하는 함수
+2) PositionCallBack 함수
+
+-> 각각에 대해서 handle 함수를 만들자
+여기까지 하면 위치 정보 달라는 console.log 뜬다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
