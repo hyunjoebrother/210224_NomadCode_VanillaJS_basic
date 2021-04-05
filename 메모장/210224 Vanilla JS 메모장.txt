@@ -344,6 +344,16 @@ navigator.geolocation.getCurrentPosition()
 -> 각각에 대해서 handle 함수를 만들자
 여기까지 하면 위치 정보 달라는 console.log 뜬다
 
+이제 Local Storage에서 위치 정보가 undefined라서 아직 저장 못하고 null 값
+-> 위치 정보를 수락하기 전에 
+
+* 확인용으로 position.coords.latitude, longitude 값을 상수로 만들어서 출력해보자
+그리고 좌표 객체 코드를 만들자
+
+* 객체의 변수 이름과 key의 이름을 같게 저장할 때는 그냥 하나만 체크!
+그 후에 saveCoords 함수에 좌표 저장
+
+F12 - Application에서 위도와 경도 확인 가능!
 
 
 
