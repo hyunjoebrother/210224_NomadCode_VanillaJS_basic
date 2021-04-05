@@ -311,15 +311,20 @@ bg,js 파일 만들고 HTML에 추가
 숫자 랜덤 생성 함수를 만들자 genRandom()
 -> JS에서 Math라는 모듈이 있음
 Math.random() : 랜덤 숫자 생성 함수
-Math.random() * 5 : 1부터 5까지 랜덤 숫자 생성
--> 뒤에 소숫점 버리기 위해 Math.floor() 함수
+Math.random() * 5 : 1부터 5까지 랜덤 숫자 생성 -> 이미지 숫자만큼 check
+-> 3장이니까 *3하면 값이 0,1,2 나옴
+-> 뒤에 소숫점 버리기 위해 Math.floor() 함수 - 버림 ㅇㅇ
+cf) Math.ceil() 함수 - 올림
+
+다음에 paint image
+다음에 이미지 추가해주자
+새로운 class인 bgImage에 대해서 css 추가
 
 
+ 
 
 
-
-
-
+ 
 
 
 
